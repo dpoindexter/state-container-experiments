@@ -40,6 +40,6 @@ const person = PersonRecord({
 const cursor = Cursor.from<PersonValues>(person);
 const val = cursor.get<string>('firstName');
 const nestedRecord = cursor.get<Address, AddressValues>('primaryAddress');
-const val2 = cursor.cursor<List<Address>>('addresses');
+const val2 = cursor.cursor<List<Address>>('addresses').cursor<Address, AddressValues>(0);
 
 

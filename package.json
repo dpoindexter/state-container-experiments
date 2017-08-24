@@ -1,0 +1,37 @@
+{
+    "name": "state-container",
+    "version": "0.0.1",
+    "description": "Explorations in React state management",
+    "main": "index.js",
+    "author": "Daniel Poindexter <dp.texas@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@types/jest": "^20.0.2",
+        "jest": "^20.0.4",
+        "prettier": "^1.5.2",
+        "ts-jest": "^20.0.7",
+        "typescript": "^2.4.1"
+    },
+    "dependencies": {
+        "fp-ts": "^0.4.3",
+        "immutable": "rc",
+        "immutable-cursor": "^2.0.1",
+        "monocle-ts": "^0.3.1",
+        "xstream": "^10.9.0"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "json"
+        ]
+    }
+}
